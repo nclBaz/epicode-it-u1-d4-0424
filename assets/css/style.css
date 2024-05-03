@@ -26,6 +26,19 @@ body {
   line-height: 78px;
   text-align: center;
   box-sizing: border-box;
+  box-shadow: 3px 3px 3px 3px rgb(186, 200, 213);
+  overflow: scroll;
+  /* display: inline; */
+}
+
+/* PER NASCONDERE LE SCROLLBAR */
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+/* L'ombra viene applicata solo se passo con il mouse sopra la card (HOVER) */
+.card:hover {
+  box-shadow: 4px 4px 4px 4px rgb(150, 161, 171);
 }
 
 .cyan-bg {
@@ -34,6 +47,7 @@ body {
 
 .salmon-bg {
   background-color: salmon;
+  opacity: 0.5;
 }
 
 .image-bg {
@@ -44,4 +58,17 @@ body {
 
 .gradient-bg {
   background-image: url("../img/photo-1654756451106-1b8e65da7f70.avif");
+}
+
+/* SELETTORI E REGOLE SPECIALI */
+input[type="password"] {
+  border: 1px solid red;
+}
+
+input:focus {
+  box-shadow: 1px 1px 1px 1px rgb(150, 161, 171);
+}
+
+ol li {
+  list-style-type: upper-roman;
 }
