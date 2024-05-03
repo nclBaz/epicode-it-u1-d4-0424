@@ -1,15 +1,19 @@
+body {
+  margin: 0px;
+}
+
 .box {
   background-color: lightseagreen;
   height: 100px;
-  width: 100px;
+  /* width: 100px; */
   border: 1px solid purple;
   margin: 10px auto;
   padding: 10px;
   line-height: 78px;
   text-align: center;
   box-sizing: border-box;
-  /* max-width: auto;
-  min-width: 100px; */
+  max-width: 100%;
+  min-width: 100px;
 }
 
 .card {
@@ -19,6 +23,9 @@
   border: 1px solid purple;
   padding: 10px;
   border-radius: 30px;
+  line-height: 78px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .cyan-bg {
@@ -29,6 +36,12 @@
   background-color: salmon;
 }
 
-.lightgreen-bg {
-  background-color: lightgreen;
+.image-bg {
+  background-image: url("../img/photo-1654756451106-1b8e65da7f70.avif");
+  background-size: cover;
+  /* background-position: top; */
+}
+
+.gradient-bg {
+  background-image: url("../img/photo-1654756451106-1b8e65da7f70.avif");
 }
